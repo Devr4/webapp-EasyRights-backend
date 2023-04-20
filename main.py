@@ -12,6 +12,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 from config import *
 from web_app.edit_pdf import create_pdf
+import os
 
 APP = FastAPI()
 limiter = Limiter(key_func=get_remote_address)

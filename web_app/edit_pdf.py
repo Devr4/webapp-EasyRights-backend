@@ -4,6 +4,7 @@ from PyPDF2 import PdfFileMerger
 from fillpdf import fillpdfs
 from fpdf import FPDF
 from config import *
+import os
 
 def create_note(note: str, main_pdf_path: str):
     if note:
